@@ -1,0 +1,68 @@
+{
+    "name": "VMFrontEnd",
+    "id": "/subscriptions/8cd81a6a-32c1-4c0d-858a-672a5fa6d0e3/resourceGroups/rg-test1/providers/Microsoft.Compute/virtualMachines/VMFrontEnd",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "centralindia",
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_B2ms"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "416915bf-151d-42f9-96df-5eec1384e16d",
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2022-datacenter-azure-edition-hotpatch",
+                "version": "latest",
+                "exactVersion": "20348.2031.231006"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "VMFrontEnd_OsDisk_1_2a74589c0ddf470dbb30bedea6890f75",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "StandardSSD_LRS",
+                    "id": "/subscriptions/8cd81a6a-32c1-4c0d-858a-672a5fa6d0e3/resourceGroups/rg-test1/providers/Microsoft.Compute/disks/VMFrontEnd_OsDisk_1_2a74589c0ddf470dbb30bedea6890f75"
+                },
+                "deleteOption": "Delete",
+                "diskSizeGB": 127
+            },
+            "dataDisks": [],
+            "diskControllerType": "SCSI"
+        },
+        "osProfile": {
+            "computerName": "VMFrontEnd",
+            "adminUsername": "AzureUser1",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true,
+                "patchSettings": {
+                    "patchMode": "AutomaticByPlatform",
+                    "automaticByPlatformSettings": {
+                        "rebootSetting": "IfRequired",
+                        "bypassPlatformSafetyChecksOnUserSchedule": false
+                    },
+                    "assessmentMode": "ImageDefault",
+                    "enableHotpatching": true
+                },
+                "enableVMAgentPlatformUpdates": false
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/8cd81a6a-32c1-4c0d-858a-672a5fa6d0e3/resourceGroups/rg-test1/providers/Microsoft.Network/networkInterfaces/vmfrontend669", 
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "timeCreated": "2023-10-30T14:19:28.5998327+00:00"
+    }
+}
