@@ -3,12 +3,12 @@ from get_value import get_value
 
 class TestGetValue(unittest.TestCase):
 
-    def test_nested_key(self):
+    def test_nested_key_ex1(self):
         obj = {"a": {"b": {"c": "d"}}}
         key = "a/b/c"
         self.assertEqual(get_value(obj, key), "d")
 
-    def test_multiple_nested_keys(self):
+    def test_nested_key_ex2(self):
         obj = {"x": {"y": {"z": "a"}}}
         key = "x/y/z" 
         self.assertEqual(get_value(obj, key), "a")
