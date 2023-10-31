@@ -10,6 +10,6 @@ Solution:
     a. Front-End Virtual Machine (Windows Server 2022) (Web-Tier)
     b. Back-ENd Virtual Machine (Ubuntu Server 20.04) (App-Tier)
     c. Microsoft SQL Server (Serverless)
-    c. External Load Balancer to load balance Web Traffic(HTTP & HTTPS) to web servers
-    d. Internal Load Balancer to load balance traffic for app VM's
+    d. External Load Balancer to load balance Web Traffic(HTTP & HTTPS) to web servers
+    e. Internal Load Balancer to load balance traffic for app VM's
 
